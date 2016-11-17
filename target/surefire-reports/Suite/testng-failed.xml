@@ -14,4 +14,18 @@
       </class> <!-- Webq.Case.CaseUIWap -->
     </classes>
   </test> <!-- TestGroups -->
+  <test name="TestGroups(failed)" parallel="tests">
+    <classes>
+      <class name="Webq.Case.CaseUIWap">
+        <methods>
+          <include name="stop"/>
+          <include name="TestWebqPageHomeCheckLogoSizeWap"/>
+          <include name="TestWebqPageHomeLoginCheckPresentUrlWap"/>
+          <include name="TestWebqPageHomeCheckHeadTitleWap"/>
+          <include name="init"/>
+          <include name="TestWebqPageHomeCheckPerUrlWap"/>
+        </methods>
+      </class> <!-- Webq.Case.CaseUIWap -->
+    </classes>
+  </test> <!-- TestGroups(failed) -->
 </suite> <!-- Failed suite [Suite] -->
