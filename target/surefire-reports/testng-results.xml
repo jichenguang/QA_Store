@@ -1,702 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="7" total="13" passed="2">
+<testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="43629" started-at="2016-11-17T05:51:58Z" finished-at="2016-11-17T05:52:42Z">
+  <suite name="Suite" duration-ms="17698" started-at="2016-11-17T06:05:30Z" finished-at="2016-11-17T06:05:48Z">
     <groups>
     </groups>
-    <test name="TestGroups" duration-ms="43629" started-at="2016-11-17T05:51:58Z" finished-at="2016-11-17T05:52:42Z">
+    <test name="TestGroups" duration-ms="17698" started-at="2016-11-17T06:05:30Z" finished-at="2016-11-17T06:05:48Z">
       <class name="Webq.Case.CaseUIWap">
-        <test-method status="PASS" signature="init()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="init" is-config="true" duration-ms="865" started-at="2016-11-17T13:51:58Z" finished-at="2016-11-17T13:51:58Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="init" is-config="true" duration-ms="688" started-at="2016-11-17T14:05:30Z" finished-at="2016-11-17T14:05:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="TestWebqPageHomeLoginCheckPresentUrlWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqPageHomeLoginCheckPresentUrlWap" duration-ms="31793" started-at="2016-11-17T13:51:58Z" finished-at="2016-11-17T13:52:30Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for Webq.utils.BasePage$2@5be07ca1 (tried for 30 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for Webq.utils.BasePage$2@5be07ca1 (tried for 30 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
-	at Webq.utils.BasePage.findElement(BasePage.java:333)
-	at Webq.utils.BasePage.type(BasePage.java:76)
-	at Webq.Page.PageLoginWap.typeEmailInputBox(PageLoginWap.java:60)
-	at Webq.Common.CommonLogin.loginWap(CommonLogin.java:87)
-	at Webq.Common.CommonLogin.loginWap(CommonLogin.java:139)
-	at Webq.Common.CommonPageHome.viewMainPageWap(CommonPageHome.java:74)
-	at Webq.Operator.OpLogin.actionLoginWap(OpLogin.java:53)
-	at Webq.Case.CaseUIWap.TestWebqPageHomeLoginCheckPresentUrlWap(CaseUIWap.java:53)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='txtEmail']"}
-Command duration or timeout: 14 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36
-*** Element info: {Using=xpath, value=.//*[@id='txtEmail']}
-	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Webq.utils.BasePage.getElement(BasePage.java:254)
-	at Webq.utils.BasePage$2.apply(BasePage.java:338)
-	at Webq.utils.BasePage$2.apply(BasePage.java:333)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='txtEmail']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="TestWebqPageHomeLoginCheckPresentUrlWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqPageHomeLoginCheckPresentUrlWap" duration-ms="16472" started-at="2016-11-17T14:05:30Z" finished-at="2016-11-17T14:05:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWebqPageHomeLoginCheckPresentUrlWap -->
-        <test-method status="FAIL" signature="TestWebqPageHomeCheckHeadTitleWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqPageHomeCheckHeadTitleWap" duration-ms="3279" started-at="2016-11-17T13:52:31Z" finished-at="2016-11-17T13:52:34Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for Webq.Locator.ResolveLocator$1@53e306a6 (tried for 3 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for Webq.Locator.ResolveLocator$1@53e306a6 (tried for 3 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
-	at Webq.Locator.ResolveLocator.findElement(ResolveLocator.java:73)
-	at Webq.Base.WapBasePage.getPageHead(WapBasePage.java:149)
-	at Webq.Page.WapPageHome.getHeadPageHomeWap(WapPageHome.java:105)
-	at Webq.Case.CaseUIWap.TestWebqPageHomeCheckHeadTitleWap(CaseUIWap.java:63)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/head/title"}
-Command duration or timeout: 26 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36
-*** Element info: {Using=xpath, value=html/head/title}
-	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Webq.Locator.ResolveLocator.getElement(ResolveLocator.java:127)
-	at Webq.Locator.ResolveLocator$1.apply(ResolveLocator.java:78)
-	at Webq.Locator.ResolveLocator$1.apply(ResolveLocator.java:73)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 24 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/head/title"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="TestWebqPageHomeCheckHeadTitleWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqPageHomeCheckHeadTitleWap" duration-ms="133" started-at="2016-11-17T14:05:47Z" finished-at="2016-11-17T14:05:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWebqPageHomeCheckHeadTitleWap -->
-        <test-method status="FAIL" signature="TestWebqPageHomeCheckLogoSizeWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqPageHomeCheckLogoSizeWap" duration-ms="3144" started-at="2016-11-17T13:52:35Z" finished-at="2016-11-17T13:52:38Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for Webq.Locator.ResolveLocator$1@21265867 (tried for 3 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for Webq.Locator.ResolveLocator$1@21265867 (tried for 3 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
-	at Webq.Locator.ResolveLocator.findElement(ResolveLocator.java:73)
-	at Webq.Base.WapBasePage.getLogoSize(WapBasePage.java:164)
-	at Webq.Page.WapPageHome.getLogoSizeWap(WapPageHome.java:119)
-	at Webq.Case.CaseUIWap.TestWebqPageHomeCheckLogoSizeWap(CaseUIWap.java:71)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/section[1]/a[2]/span"}
-Command duration or timeout: 29 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36
-*** Element info: {Using=xpath, value=html/body/section[1]/a[2]/span}
-	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Webq.Locator.ResolveLocator.getElement(ResolveLocator.java:127)
-	at Webq.Locator.ResolveLocator$1.apply(ResolveLocator.java:78)
-	at Webq.Locator.ResolveLocator$1.apply(ResolveLocator.java:73)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 24 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/section[1]/a[2]/span"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="TestWebqPageHomeCheckLogoSizeWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqPageHomeCheckLogoSizeWap" duration-ms="66" started-at="2016-11-17T14:05:47Z" finished-at="2016-11-17T14:05:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWebqPageHomeCheckLogoSizeWap -->
-        <test-method status="FAIL" signature="TestWebqPageHomeCheckPerUrlWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqPageHomeCheckPerUrlWap" duration-ms="3160" started-at="2016-11-17T13:52:38Z" finished-at="2016-11-17T13:52:42Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for Webq.Locator.ResolveLocator$1@212666c4 (tried for 3 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for Webq.Locator.ResolveLocator$1@212666c4 (tried for 3 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
-	at Webq.Locator.ResolveLocator.findElement(ResolveLocator.java:73)
-	at Webq.Base.WapBasePage.getDivMenuBar(WapBasePage.java:203)
-	at Webq.Page.WapPageHome.getMenuBar(WapPageHome.java:168)
-	at Webq.Case.CaseUIWap.TestWebqPageHomeCheckPerUrlWap(CaseUIWap.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//section[@class = 'menu-bar']"}
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38219c8e-a857-a249-a595-746432cf5b36
-*** Element info: {Using=xpath, value=.//section[@class = 'menu-bar']}
-	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Webq.Locator.ResolveLocator.getElement(ResolveLocator.java:127)
-	at Webq.Locator.ResolveLocator$1.apply(ResolveLocator.java:78)
-	at Webq.Locator.ResolveLocator$1.apply(ResolveLocator.java:73)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 24 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//section[@class = 'menu-bar']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous7542621675671530768webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="TestWebqPageHomeCheckPerUrlWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqPageHomeCheckPerUrlWap" duration-ms="986" started-at="2016-11-17T14:05:47Z" finished-at="2016-11-17T14:05:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWebqPageHomeCheckPerUrlWap -->
-        <test-method status="PASS" signature="TestWebqLoginOutWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqLoginOutWap" duration-ms="0" started-at="2016-11-17T13:52:42Z" finished-at="2016-11-17T13:52:42Z">
+        <test-method status="PASS" signature="TestWebqLoginOutWap()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="TestWebqLoginOutWap" duration-ms="1" started-at="2016-11-17T14:05:48Z" finished-at="2016-11-17T14:05:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWebqLoginOutWap -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="stop" is-config="true" duration-ms="378" started-at="2016-11-17T13:52:42Z" finished-at="2016-11-17T13:52:43Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:Webq.Case.CaseUIWap@5b202a3a]" name="stop" is-config="true" duration-ms="346" started-at="2016-11-17T14:05:48Z" finished-at="2016-11-17T14:05:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
       </class> <!-- Webq.Case.CaseUIWap -->
     </test> <!-- TestGroups -->
   </suite> <!-- Suite -->
-  <suite name="Suite (1)" duration-ms="17" started-at="2016-11-17T05:53:24Z" finished-at="2016-11-17T05:53:24Z">
+  <suite name="Suite (1)" duration-ms="73763" started-at="2016-11-17T06:07:05Z" finished-at="2016-11-17T06:08:18Z">
     <groups>
     </groups>
-    <test name="TestGroups" duration-ms="17" started-at="2016-11-17T05:53:24Z" finished-at="2016-11-17T05:53:24Z">
+    <test name="TestGroups" duration-ms="73763" started-at="2016-11-17T06:07:05Z" finished-at="2016-11-17T06:08:18Z">
       <class name="Webq.Case.CaseWebq">
-        <test-method status="FAIL" signature="init()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="init" is-config="true" duration-ms="0" started-at="2016-11-17T13:53:24Z" finished-at="2016-11-17T13:53:24Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[Window not found. The browser window may have been closed.
-Command duration or timeout: 25 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a9d78e32-ede2-1244-988c-cda81cf8dfd1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 25 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a9d78e32-ede2-1244-988c-cda81cf8dfd1
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
-	at Webq.Case.CaseWebq.init(CaseWebq.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at <anonymous class>.nsCommandProcessor.prototype.execute(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12719)
-	at <anonymous class>.Dispatcher.executeAs/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9558)
-	at <anonymous class>.Resource.prototype.handle(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9705)
-	at <anonymous class>.Dispatcher.prototype.dispatch(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9652)
-	at <anonymous class>.WebDriverServer/<.handle(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12517)
-	at <anonymous class>.createHandlerFunc/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
-	at <anonymous class>.ServerHandler.prototype.handleResponse(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
-	at <anonymous class>.Connection.prototype.process(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
-	at <anonymous class>.RequestReader.prototype._handleResponse(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
-	at <anonymous class>.RequestReader.prototype._processBody(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
-	at <anonymous class>.RequestReader.prototype.onInputStreamReady(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous8617708603347605774webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="init()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="init" is-config="true" duration-ms="1543" started-at="2016-11-17T14:07:03Z" finished-at="2016-11-17T14:07:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="TestWebq1()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="TestWebq1" duration-ms="4" started-at="2016-11-17T13:53:24Z" finished-at="2016-11-17T13:53:24Z">
+        <test-method status="PASS" signature="TestWebq1()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="TestWebq1" duration-ms="17230" started-at="2016-11-17T14:07:05Z" finished-at="2016-11-17T14:07:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWebq1 -->
-        <test-method status="SKIP" signature="TestWebq2()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="TestWebq2" duration-ms="0" started-at="2016-11-17T13:53:24Z" finished-at="2016-11-17T13:53:24Z">
+        <test-method status="PASS" signature="TestWebq2()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="TestWebq2" duration-ms="2818" started-at="2016-11-17T14:07:22Z" finished-at="2016-11-17T14:07:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWebq2 -->
-        <test-method status="SKIP" signature="TestWebq3()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="TestWebq3" duration-ms="1" started-at="2016-11-17T13:53:24Z" finished-at="2016-11-17T13:53:24Z">
+        <test-method status="PASS" signature="TestWebq3()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="TestWebq3" duration-ms="53704" started-at="2016-11-17T14:07:25Z" finished-at="2016-11-17T14:08:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWebq3 -->
-        <test-method status="SKIP" signature="TestWebq4()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="TestWebq4" duration-ms="0" started-at="2016-11-17T13:53:24Z" finished-at="2016-11-17T13:53:24Z">
+        <test-method status="PASS" signature="TestWebq4()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="TestWebq4" duration-ms="1" started-at="2016-11-17T14:08:18Z" finished-at="2016-11-17T14:08:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWebq4 -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="stop" is-config="true" duration-ms="352" started-at="2016-11-17T13:53:24Z" finished-at="2016-11-17T13:53:24Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:Webq.Case.CaseWebq@6ebf0f36]" name="stop" is-config="true" duration-ms="737" started-at="2016-11-17T14:08:18Z" finished-at="2016-11-17T14:08:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
       </class> <!-- Webq.Case.CaseWebq -->
     </test> <!-- TestGroups -->
   </suite> <!-- Suite (1) -->
-  <suite name="Suite (0)" duration-ms="40141" started-at="2016-11-17T05:52:43Z" finished-at="2016-11-17T05:53:23Z">
+  <suite name="Suite (0)" duration-ms="72995" started-at="2016-11-17T06:05:50Z" finished-at="2016-11-17T06:07:03Z">
     <groups>
     </groups>
-    <test name="TestGroups" duration-ms="40141" started-at="2016-11-17T05:52:43Z" finished-at="2016-11-17T05:53:23Z">
+    <test name="TestGroups" duration-ms="72995" started-at="2016-11-17T06:05:50Z" finished-at="2016-11-17T06:07:03Z">
       <class name="Webq.Case.CaseWAP">
-        <test-method status="PASS" signature="init()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="init" is-config="true" duration-ms="441" started-at="2016-11-17T13:52:43Z" finished-at="2016-11-17T13:52:43Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="init" is-config="true" duration-ms="1435" started-at="2016-11-17T14:05:48Z" finished-at="2016-11-17T14:05:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="TestWap1()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="TestWap1" duration-ms="30744" started-at="2016-11-17T13:52:43Z" finished-at="2016-11-17T13:53:14Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for Webq.utils.BasePage$2@40750fd2 (tried for 30 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d811c027-b369-0548-8059-d64f28355915]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for Webq.utils.BasePage$2@40750fd2 (tried for 30 second(s) with 500 MILLISECONDS interval)
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d811c027-b369-0548-8059-d64f28355915
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
-	at Webq.utils.BasePage.findElement(BasePage.java:333)
-	at Webq.utils.BasePage.type(BasePage.java:76)
-	at Webq.Page.PageLoginWap.typeEmailInputBox(PageLoginWap.java:60)
-	at Webq.Common.CommonLogin.loginWap(CommonLogin.java:87)
-	at Webq.Common.CommonLogin.loginWap(CommonLogin.java:139)
-	at Webq.Common.CommonPageHome.viewMainPageWap(CommonPageHome.java:74)
-	at Webq.Operator.OpLogin.actionLoginWap(OpLogin.java:53)
-	at Webq.Case.CaseWAP.TestWap1(CaseWAP.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='txtEmail']"}
-Command duration or timeout: 11 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d811c027-b369-0548-8059-d64f28355915
-*** Element info: {Using=xpath, value=.//*[@id='txtEmail']}
-	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Webq.utils.BasePage.getElement(BasePage.java:254)
-	at Webq.utils.BasePage$2.apply(BasePage.java:338)
-	at Webq.utils.BasePage$2.apply(BasePage.java:333)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='txtEmail']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="TestWap1()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="TestWap1" duration-ms="2884" started-at="2016-11-17T14:05:50Z" finished-at="2016-11-17T14:05:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWap1 -->
-        <test-method status="FAIL" signature="TestWap2()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="TestWap2" duration-ms="3061" started-at="2016-11-17T13:53:14Z" finished-at="2016-11-17T13:53:17Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out waiting for page load.
-Command duration or timeout: 2.04 seconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d811c027-b369-0548-8059-d64f28355915]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out waiting for page load.
-Command duration or timeout: 2.04 seconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d811c027-b369-0548-8059-d64f28355915
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-	at Webq.Page.PageAd.openProductAdWap(PageAd.java:70)
-	at Webq.Page.PageAd.PlCartAdWap(PageAd.java:46)
-	at Webq.Operator.OpExWebq.actionExProPagesWap(OpExWebq.java:39)
-	at Webq.Case.CaseWAP.TestWap2(CaseWAP.java:69)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at <anonymous class>.Utils.initWebLoadingListener/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9071)
-	at <anonymous class>.WebLoadingListener/e(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:5142)
-	at <anonymous class>.WebLoadingListener/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:5150)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="TestWap2()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="TestWap2" duration-ms="12736" started-at="2016-11-17T14:05:53Z" finished-at="2016-11-17T14:06:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWap2 -->
-        <test-method status="FAIL" signature="TestWap3()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="TestWap3" duration-ms="2855" started-at="2016-11-17T13:53:20Z" finished-at="2016-11-17T13:53:23Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//div[@id='cartList']//table[@class = 'cart gridtable']//tr[2]"}
-Command duration or timeout: 13 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d811c027-b369-0548-8059-d64f28355915
-*** Element info: {Using=xpath, value=.//div[@id='cartList']//table[@class = 'cart gridtable']//tr[2]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//div[@id='cartList']//table[@class = 'cart gridtable']//tr[2]"}
-Command duration or timeout: 13 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d811c027-b369-0548-8059-d64f28355915
-*** Element info: {Using=xpath, value=.//div[@id='cartList']//table[@class = 'cart gridtable']//tr[2]}
-	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Webq.Element.ElementPageCart.getPathCartProTabletrWap(ElementPageCart.java:164)
-	at Webq.Element.ElementPageCart.<init>(ElementPageCart.java:66)
-	at Webq.Page.PageCart.CartCreaseWap(PageCart.java:90)
-	at Webq.Page.PageCart.PlCartWap(PageCart.java:50)
-	at Webq.Operator.OpStoreAll.actionCartSubCancleOrderWap(OpStoreAll.java:68)
-	at Webq.Case.CaseWAP.TestWap3(CaseWAP.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//div[@id='cartList']//table[@class = 'cart gridtable']//tr[2]"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="TestWap3()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="TestWap3" duration-ms="57369" started-at="2016-11-17T14:06:05Z" finished-at="2016-11-17T14:07:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWap3 -->
-        <test-method status="PASS" signature="TestWap4()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="TestWap4" duration-ms="0" started-at="2016-11-17T13:53:23Z" finished-at="2016-11-17T13:53:23Z">
+        <test-method status="PASS" signature="TestWap4()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="TestWap4" duration-ms="1" started-at="2016-11-17T14:07:03Z" finished-at="2016-11-17T14:07:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestWap4 -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="stop" is-config="true" duration-ms="725" started-at="2016-11-17T13:53:23Z" finished-at="2016-11-17T13:53:24Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:Webq.Case.CaseWAP@1d730606]" name="stop" is-config="true" duration-ms="245" started-at="2016-11-17T14:07:03Z" finished-at="2016-11-17T14:07:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

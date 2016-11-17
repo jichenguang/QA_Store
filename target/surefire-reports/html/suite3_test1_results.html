@@ -12,273 +12,11 @@
 <body>
 <h1>TestGroups</h1>
 <p>
-  Test duration: 37.826s
+  Test duration: 74.670s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">Webq.Case.CaseWAP</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestWap1
-      </td>
-  <td class="duration">
-    30.744s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for Webq.utils.BasePage$2@40750fd2 (tried for 30 second(s) with 500 MILLISECONDS interval)<br/>
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;<br/>
-System info: host: &apos;localhost&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_66&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
-Session ID: d811c027-b369-0548-8059-d64f28355915</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)<br />
-              Webq.utils.BasePage.findElement(BasePage.java:333)<br />
-              Webq.utils.BasePage.type(BasePage.java:76)<br />
-              Webq.Page.PageLoginWap.typeEmailInputBox(PageLoginWap.java:60)<br />
-              Webq.Common.CommonLogin.loginWap(CommonLogin.java:87)<br />
-              Webq.Common.CommonLogin.loginWap(CommonLogin.java:139)<br />
-              Webq.Common.CommonPageHome.viewMainPageWap(CommonPageHome.java:74)<br />
-              Webq.Operator.OpLogin.actionLoginWap(OpLogin.java:53)<br />
-              Webq.Case.CaseWAP.TestWap1(CaseWAP.java:60)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:497)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
-              org.testng.TestRunner.run(TestRunner.java:632)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;txtEmail&apos;]&quot;}<br/>
-Command duration or timeout: 11 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;<br/>
-System info: host: &apos;localhost&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_66&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
-Session ID: d811c027-b369-0548-8059-d64f28355915<br/>
-*** Element info: {Using=xpath, value=.//*[@id=&apos;txtEmail&apos;]}</a><br />
-        <div class="stackTrace" id="exception-1">
-                      sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)<br />
-                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-                      java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br />
-                      org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-                      Webq.utils.BasePage.getElement(BasePage.java:254)<br />
-                      Webq.utils.BasePage$2.apply(BasePage.java:338)<br />
-                      Webq.utils.BasePage$2.apply(BasePage.java:333)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)<br />
-                      Webq.utils.BasePage.findElement(BasePage.java:333)<br />
-                      Webq.utils.BasePage.type(BasePage.java:76)<br />
-                      Webq.Page.PageLoginWap.typeEmailInputBox(PageLoginWap.java:60)<br />
-                      Webq.Common.CommonLogin.loginWap(CommonLogin.java:87)<br />
-                      Webq.Common.CommonLogin.loginWap(CommonLogin.java:139)<br />
-                      Webq.Common.CommonPageHome.viewMainPageWap(CommonPageHome.java:74)<br />
-                      Webq.Operator.OpLogin.actionLoginWap(OpLogin.java:53)<br />
-                      Webq.Case.CaseWAP.TestWap1(CaseWAP.java:60)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:497)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
-                      org.testng.TestRunner.run(TestRunner.java:632)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
-                      org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
-                      org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-                      java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-                      java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-                      java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-                      java.lang.Thread.run(Thread.java:745)<br />
-                  </div>
-              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;txtEmail&apos;]&quot;}<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;<br/>
-System info: host: &apos;localhost&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_66&apos;<br/>
-Driver info: driver.version: unknown</a><br />
-        <div class="stackTrace" id="exception-2">
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)<br />
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  TestWap2
-      </td>
-  <td class="duration">
-    3.061s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Timed out waiting for page load.<br/>
-Command duration or timeout: 2.04 seconds<br/>
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;<br/>
-System info: host: &apos;localhost&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_66&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
-Session ID: d811c027-b369-0548-8059-d64f28355915</b></a><br />
-    <div class="stackTrace" id="exception-3">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)<br />
-              Webq.Page.PageAd.openProductAdWap(PageAd.java:70)<br />
-              Webq.Page.PageAd.PlCartAdWap(PageAd.java:46)<br />
-              Webq.Operator.OpExWebq.actionExProPagesWap(OpExWebq.java:39)<br />
-              Webq.Case.CaseWAP.TestWap2(CaseWAP.java:69)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:497)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
-              org.testng.TestRunner.run(TestRunner.java:632)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse">org.openqa.selenium.TimeoutException: Timed out waiting for page load.<br/>
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;<br/>
-System info: host: &apos;localhost&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_66&apos;<br/>
-Driver info: driver.version: unknown</a><br />
-        <div class="stackTrace" id="exception-4">
-                      &lt;anonymous class&gt;.Utils.initWebLoadingListener/&lt;(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9071)<br />
-                      &lt;anonymous class&gt;.WebLoadingListener/e(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:5142)<br />
-                      &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:5150)<br />
-                      &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  TestWap3
-      </td>
-  <td class="duration">
-    2.855s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//div[@id=&apos;cartList&apos;]//table[@class = &apos;cart gridtable&apos;]//tr[2]&quot;}<br/>
-Command duration or timeout: 13 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;<br/>
-System info: host: &apos;localhost&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_66&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.3.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
-Session ID: d811c027-b369-0548-8059-d64f28355915<br/>
-*** Element info: {Using=xpath, value=.//div[@id=&apos;cartList&apos;]//table[@class = &apos;cart gridtable&apos;]//tr[2]}</b></a><br />
-    <div class="stackTrace" id="exception-5">
-              sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              Webq.Element.ElementPageCart.getPathCartProTabletrWap(ElementPageCart.java:164)<br />
-              Webq.Element.ElementPageCart.&lt;init&gt;(ElementPageCart.java:66)<br />
-              Webq.Page.PageCart.CartCreaseWap(PageCart.java:90)<br />
-              Webq.Page.PageCart.PlCartWap(PageCart.java:50)<br />
-              Webq.Operator.OpStoreAll.actionCartSubCancleOrderWap(OpStoreAll.java:68)<br />
-              Webq.Case.CaseWAP.TestWap3(CaseWAP.java:77)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:497)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
-              org.testng.TestRunner.run(TestRunner.java:632)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//div[@id=&apos;cartList&apos;]//table[@class = &apos;cart gridtable&apos;]//tr[2]&quot;}<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;<br/>
-System info: host: &apos;localhost&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_66&apos;<br/>
-Driver info: driver.version: unknown</a><br />
-        <div class="stackTrace" id="exception-6">
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)<br />
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/xf/kdg8kbhj4fn2_0fpfvbl9v300000gp/T/anonymous2469174424705232896webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-      </table>
 
 
   <table class="resultsTable">
@@ -289,10 +27,52 @@ Driver info: driver.version: unknown</a><br />
             
 <tr>
   <td class="method">
+                  TestWap1
+      </td>
+  <td class="duration">
+    2.884s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TestWap2
+      </td>
+  <td class="duration">
+    12.736s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TestWap3
+      </td>
+  <td class="duration">
+    57.369s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
                   TestWap4
       </td>
   <td class="duration">
-    0.000s
+    0.001s
   </td>
   <td class="result">
         

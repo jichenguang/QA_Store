@@ -13,17 +13,4 @@
       </class> <!-- Webq.Case.CaseWAP -->
     </classes>
   </test> <!-- TestGroups -->
-  <test name="TestGroups(failed)" parallel="tests">
-    <classes>
-      <class name="Webq.Case.CaseWAP">
-        <methods>
-          <include name="init"/>
-          <include name="stop"/>
-          <include name="TestWap2"/>
-          <include name="TestWap3"/>
-          <include name="TestWap1"/>
-        </methods>
-      </class> <!-- Webq.Case.CaseWAP -->
-    </classes>
-  </test> <!-- TestGroups(failed) -->
 </suite> <!-- Failed suite [Suite (0)] -->
